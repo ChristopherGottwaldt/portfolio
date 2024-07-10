@@ -1,26 +1,24 @@
 {
-  description = "A Nix-flake-based Node.js dev environment";
+  description = "A Nix-flake-based Node.js development environment";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-23.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
   };
 
-  outputs = { self , nixpkgs ,... }: let
-    # system should match the system you are running on
-    # system = "x86_64-linux";
-    system = "x86_64-linux";
+  outputs = { self, nixpkgs, ... }@inputs: let
+    system = "x86_64-linux"; # or "x86_64-darwin" if you are on macOS
   in {
-    devShells."${system}".default = let
+    devShells.${system}.default = let
       pkgs = import nixpkgs {
         inherit system;
       };
     in pkgs.mkShell {
-      # create an environment with nodejs_18, pnpm, and yarn
       packages = with pkgs; [
         nodejs_20
         nodePackages.pnpm
-        (yarn.override { nodejs = nodejs_20; })
-      ];
+        yarn
+        nodePackages.vercel
+       ];
 
       shellHook = ''
         echo "node `${pkgs.nodejs}/bin/node --version`"

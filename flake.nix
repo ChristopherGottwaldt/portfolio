@@ -18,6 +18,9 @@
         nodePackages.pnpm
         yarn
         nodePackages.vercel
+        # nodePackages.next
+        # nodePackages.react
+        # nodePackages.react-dom
        ];
 
       shellHook = ''

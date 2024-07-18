@@ -10,6 +10,7 @@ import {
   } from "@/components/ui/menubar"
   
 import Navbar from "@/components/ui/NavBar";
+import { ModeToggle } from "@/components/ui/darkThemeToggle"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           Hi! I&apos;m Christopher Gottwaldt!&nbsp;
           {/* <code className="font-mono font-bold">src/app/page.tsx</code> */}
         </p>
+        <ModeToggle></ModeToggle>
         <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
         </div>
       </div>

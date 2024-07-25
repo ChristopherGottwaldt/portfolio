@@ -9,7 +9,7 @@ const Navbar = () => {
       <a className="transition-colors hover:text-foreground/80 text-foreground" href="/Blog">Blog</a>
       <a className="transition-colors hover:text-foreground/80 text-foreground" href="/Misc">Misc</a>
       <a className="transition-colors hover:text-foreground/80 text-foreground" href="/Art">Art</a> 
-      <a className="transition-colors hover:text-foreground/80 text-foreground" href="/Source">Source</a> 
+      <a className="transition-colors hover:text-foreground/80 text-foreground" href="/About">About</a> 
     </nav>
   );
 };

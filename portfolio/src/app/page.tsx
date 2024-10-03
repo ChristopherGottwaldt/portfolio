@@ -12,23 +12,26 @@ import {
 import Navbar from "@/components/ui/NavBar";
 import { ModeToggle } from "@/components/ui/darkThemeToggle"
 import React, {useEffect} from "react";
+import { time } from "console";
 
 let i = 0;
 let text = "Welcome to my site!"
-let speed = 2;
+let speed = 100;
 
 export default function Home() {
   useEffect (() => {
+    let timeoutID : any;
     const typeWriter = () => {
       const headerMessage = document.getElementById("header-message");
       if (headerMessage && i < text.length) {
         headerMessage.innerHTML += text.charAt(i);
         i++;
-        setTimeout(typeWriter, speed);
+        timeoutID = setTimeout(typeWriter, speed);
       }
     }
     typeWriter();
-  })
+    return () => {clearTimeout(timeoutID)}
+  },[])
   
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">

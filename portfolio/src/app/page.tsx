@@ -13,6 +13,7 @@ import Navbar from "@/components/ui/NavBar";
 import { ModeToggle } from "@/components/ui/darkThemeToggle"
 import React, {useEffect} from "react";
 import { time } from "console";
+import Image from "next/image";
 
 let i = 0;
 let text = "Welcome to my site!"
@@ -47,8 +48,10 @@ export default function Home() {
       
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl mt-10 space-y-6 md:space-y-0 md:space-x-10">
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-          <img
+          <Image
             src="/assets/madhacks.jpg"
+            width={500}
+            height={500}
             alt="Me at MadHacks"
             className="rounded-lg shadow-lg max-w-full h-auto"
           />

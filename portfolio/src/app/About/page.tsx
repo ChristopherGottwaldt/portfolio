@@ -25,8 +25,7 @@ return (
       </div> */}
     </div>
     <div>
-      <p>I made this website with React, Next.js, ShadCN, Typescript, and soon to be MDX and Tailwind. It's still very much in progress, so check back to see my changes as I make them!</p>
-      <br />
+      <p>I made this website with React, Next.js, ShadCN, Typescript, and soon to be MDX and Tailwind. It&apos;s</p>
       <p>Here's where you can see my code: <a href="https://github.com/ChristopherGottwaldt/portfolio">GitHub Repo</a></p> 
     </div>
 

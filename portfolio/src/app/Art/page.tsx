@@ -40,7 +40,7 @@ return (
       </div> */}
     </div>
     <div className="w-full max-w-5xl text-center">
-        <p className="text-lg font-semibold mb-8">Some artwork that I've done!</p>
+        <p className="text-lg font-semibold mb-8">Some artwork that I have done!</p>
 
         {/* Grid container for artwork cards */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">

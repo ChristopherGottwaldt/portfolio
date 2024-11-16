@@ -65,6 +65,8 @@ return (
             </Card>
           ))}
         </div>
+        <br />
+        <p>NOTE: References from Google Images used for dragonEye, waterfallCave, and angelBoy!</p>
       </div>
     </main>
   );

@@ -8,8 +8,23 @@ import {
   MenubarTrigger,
 } from "@/components/ui/menubar"
 
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+
 import Navbar from "@/components/ui/NavBar";
 import { ModeToggle } from "@/components/ui/darkThemeToggle"
+import Image from "next/image";
+
+const artworks = ["cliffjumpingFriends.jpg", "dragonEye.jpg",  
+  "waterfallCave.jpg", "abstractDepth.jpg", "angelBoy.jpg", 
+  "bTreeNeuron.jpg", "pixelTree.png", "stillLife.jpg", "crystals.jpg"]
 
 export default function Home() {
 return (
@@ -17,17 +32,40 @@ return (
     <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
     <Navbar></Navbar>
       <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-      Changes coming soon!
+      Enjoy!
       {/* <code className="font-mono font-bold">src/app/page.tsx</code> */}
       </p>
       <ModeToggle></ModeToggle>
       {/* <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
       </div> */}
     </div>
+    <div className="w-full max-w-5xl text-center">
+        <p className="text-lg font-semibold mb-8">Here's some artwork that I've done!</p>
 
-    <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-      <p>Welcome to my website! <br />I am a student at UW-Madison studying Computer Science and Data Science</p>
-    </div>
-  </main>
-);
+        {/* Grid container for artwork cards */}
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-8">
+          {artworks.map((img, index) => (
+            <Card key={index} className="overflow-hidden shadow-lg">
+              <CardHeader>
+                {/* just going to remove file extension for name */}
+                <CardTitle>{img.slice(0, -4)}</CardTitle>
+              </CardHeader>
+              <CardContent className="p-0">
+                <Image
+                  src={`/assets/${img}`}
+                  width={500}
+                  height={500}
+                  alt={img}
+                  className="rounded-lg object-cover w-full h-auto"
+                />
+              </CardContent>
+              <CardFooter className="text-sm text-gray-500">
+                {/* <p>.</p> */}
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </main>
+  );
 }

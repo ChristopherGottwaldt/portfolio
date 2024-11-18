@@ -35,15 +35,15 @@ export default function Home() {
   },[])
   
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <Navbar />
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-        Changes coming soon!
-        </p>
-        <ModeToggle />
+    <main className="flex min-h-screen flex-col items-center justify-between p-8">
+        <div className="fixed left-0 top-0 flex w-full items-center justify-between border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-4 pt-4 px-6 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:rounded-xl lg:border lg:bg-gray-200 lg:dark:bg-zinc-800/30">        <Navbar></Navbar>
+          <div className="ml-4">
+            <ModeToggle></ModeToggle>
+          </div>  
+        {/* <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
+        </div> */}
       </div>
-
+      <br />
       <div id="header-message" className="my-6 text-xl"></div>
       
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl mt-10 space-y-6 md:space-y-0 md:space-x-10">

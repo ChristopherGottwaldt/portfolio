@@ -21,6 +21,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/markdown/blog0.mdx", "src/app/Blog/mdx-page/page.mdx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/markdown/blog0.mdx", "src/app/Blog/page.mdx"],
   "exclude": ["node_modules"]
 }

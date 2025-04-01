@@ -17,7 +17,6 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 
-
 import Navbar from "@/components/ui/NavBar";
 import { ModeToggle } from "@/components/ui/darkThemeToggle"
 import Image from "next/image";

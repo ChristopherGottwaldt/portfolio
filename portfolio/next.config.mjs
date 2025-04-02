@@ -1,14 +1,18 @@
 import nextMdx from '@next/mdx'
+import rehypePrism from 'rehype-prism-plus'
+import remarkGfm from 'remark-gfm'; // GitHub-flavored markdown (includes checkboxes, tables, etc.)
 
 const withMdx = nextMdx({
-  // By default only the `.mdx` extension is supported.
   extension: /\.mdx?$/,
-  options: {/* otherOptions… */}
+  options: {
+    remarkPlugins: [remarkGfm], // Include these plugins
+    rehypePlugins: [rehypePrism], // Enable syntax highlighting for code blocks
+  },
 })
 
-const nextConfig = withMdx({
-  // Support MDX files as pages:
-  pageExtensions: ['md', 'mdx', 'tsx', 'ts', 'jsx', 'js'],
-})
+const nextConfig = {
+  pageExtensions: ['mdx', 'tsx', 'ts', 'jsx', 'js', 'md'],
+  reactStrictMode: true,  // Optional: React strict mode for better debugging
+}
 
-export default nextConfig
+export default withMdx(nextConfig)

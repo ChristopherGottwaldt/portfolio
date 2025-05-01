@@ -1,3 +1,8 @@
+Created by Chris Gottwaldt, using the official documentation for each
+part of the tech stack to use this site as a learning experience.
+
+Security patches were done with GitHub's dependabot.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

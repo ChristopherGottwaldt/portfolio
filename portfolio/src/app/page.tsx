@@ -45,8 +45,7 @@ export default function Home() {
         </div> */}
       </div>
       <br />
-      <div id="header-message" className="my-6 text-xl"></div>
-      
+      <div id="header-message" className="mt-20 my-6 text-xl"></div>      
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-5xl mt-10 space-y-6 md:space-y-0 md:space-x-10">
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <Image

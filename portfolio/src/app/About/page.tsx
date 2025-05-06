@@ -26,7 +26,6 @@ return (
       <br />
       <br />
       <br />
-      <br />
       <p>I made this website with Next.js, React, ShadCN, Typescript, MDX, and Tailwind.</p>
       <p className="text-align: center">Here&apos;s where you can see my code:</p>
         <Link href="https://github.com/ChristopherGottwaldt/portfolio" className="text-blue-350 underline hover:text-blue-700">Portfolio Site GitHub</Link> 

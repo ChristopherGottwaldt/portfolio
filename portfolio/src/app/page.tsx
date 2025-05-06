@@ -30,6 +30,7 @@ export default function Home() {
         timeoutID = setTimeout(typeWriter, speed);
       }
     }
+    <br />
     typeWriter();
     return () => {clearTimeout(timeoutID)}
   },[])

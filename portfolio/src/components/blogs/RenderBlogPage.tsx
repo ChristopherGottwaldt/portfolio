@@ -1,4 +1,4 @@
-// @filename: TestClientComponent.tsx
+// @filename: RenderBlogPage.tsx
 'use client';
 
 import dynamic from 'next/dynamic';
@@ -9,8 +9,8 @@ const Test = dynamic(() => import('@/components/blogs/test.mdx'), {
   ssr: false, // Disable SSR for this component, meaning it will only render on the client side
 });
 
-const TestClientComponent: React.FC = () => {
+const RenderBlogPage: React.FC = () => {
   return <Test />;
 };
 
-export default TestClientComponent;
+export default RenderBlogPage;

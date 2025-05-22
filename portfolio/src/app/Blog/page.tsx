@@ -1,7 +1,7 @@
 import React from "react";
 // import { Card, CardContent, CardHeader, CardFooter, CardTitle } from "@/components/ui/card";
 // import Image from "next/image";
-import TestClientComponent from "@/components/blogs/TestClientComponent"; // Import the client-side MDX component
+import RenderBlogPage from "@/components/blogs/RenderBlogPage"; // Import the client-side MDX component
 import Navbar from "@/components/ui/NavBar";
 import { ModeToggle } from "@/components/ui/darkThemeToggle";
 
@@ -20,7 +20,7 @@ const Home: React.FC = () => {
         <br />
         <br />
         <br />
-        <TestClientComponent />
+        <RenderBlogPage />
       </div>
     </main>
   );

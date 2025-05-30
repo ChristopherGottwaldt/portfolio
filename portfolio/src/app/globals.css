@@ -74,3 +74,12 @@
       @apply bg-background text-foreground;
     }
   }
+
+  .image-rotate-y {
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.image-rotate-y:hover {
+  transform: rotateY(180deg);
+}

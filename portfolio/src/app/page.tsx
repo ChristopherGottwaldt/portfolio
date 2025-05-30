@@ -52,7 +52,7 @@ export default function Home() {
             width={500}
             height={500}
             alt="Me at MadHacks"
-            className="rounded-lg shadow-lg max-w-full h-auto transition-transform duration-500 hover:rotate-y-180"
+            className="image-rotate-y rounded-lg shadow-lg max-w-full h-auto"
           />
         </div>
 

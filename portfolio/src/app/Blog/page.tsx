@@ -1,9 +1,16 @@
 import React from "react";
-// import { Card, CardContent, CardHeader, CardFooter, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardFooter, CardTitle } from "@/components/ui/card";
 // import Image from "next/image";
 import RenderBlogPage from "@/components/blogs/RenderBlogPage"; // Import the client-side MDX component
 import Navbar from "@/components/ui/NavBar";
 import { ModeToggle } from "@/components/ui/darkThemeToggle";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 
 const Home: React.FC = () => {
   return (
@@ -20,6 +27,33 @@ const Home: React.FC = () => {
         <br />
         <br />
         <br />
+
+
+        <Carousel>
+          <CarouselContent>
+            <CarouselItem>
+              <Card>
+              <CardHeader>
+                {/* just going to remove file extension for name */}
+                <CardTitle>Blog1</CardTitle>
+              </CardHeader>
+              <CardContent className="p-0"> BLOG 1 Text
+              </CardContent>
+              <CardFooter className="text-sm text-gray-500">
+                Blog1 Footer
+              </CardFooter>
+            </Card>            </CarouselItem>
+            <CarouselItem>...</CarouselItem>
+            <CarouselItem>...</CarouselItem>
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
+
+        <br />
+        <br />
+        <br />
+
         <RenderBlogPage />
       </div>
     </main>

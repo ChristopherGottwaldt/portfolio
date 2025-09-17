@@ -22,8 +22,12 @@ const Navbar = () => {
           key={item.name}
           href={item.href}
           className={clsx(
-            'transition-colors hover:text-foreground/80',
-            pathname === item.href ? 'text-primary font-semibold' : 'text-foreground'
+            // 'transition-colors hover:text-blue-300',
+            // pathname === item.href ? 'text-blue-400 font-semibold color-' : 'text-foreground'
+            'px-3 py-1 rounded-md transition-colors hover:bg-blue-200 hover:text-black',
+            pathname === item.href
+              ? 'bg-blue-200 text-black font-semibold'
+              : 'text-foreground'
           )}
         >
           {item.name}

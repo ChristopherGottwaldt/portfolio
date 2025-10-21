@@ -57,9 +57,9 @@ export default function Home() {
         </div>
 
         <div className="w-full md:w-1/2 flex flex-col justify-center">
-          <h1 className="text-3xl font-bold mb-4">Welcome to My Site!</h1>
+          <h1 className="text-3xl font-bold mb-4">Nice to meet you!</h1>
           <p className="text-lg">
-            Nice to meet you! I am a student at UW-Madison studying Computer Science and Data Science.
+            I went to UW-Madison for Computer Science and Data Science, and now I work in DevOps!
           </p>
         </div>
       </div>

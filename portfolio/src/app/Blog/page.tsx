@@ -34,13 +34,12 @@ const Home: React.FC = () => {
             <CarouselItem>
               <Card>
               <CardHeader>
-                {/* just going to remove file extension for name */}
-                <CardTitle>Blog1</CardTitle>
+                <CardTitle>1st Blog Post</CardTitle>
               </CardHeader>
-              <CardContent className="p-0"> BLOG 1 Text
+              <CardContent className="p-0"> Text
               </CardContent>
               <CardFooter className="text-sm text-gray-500">
-                Blog1 Footer
+                Footer
               </CardFooter>
             </Card>            </CarouselItem>
             <CarouselItem>...</CarouselItem>
